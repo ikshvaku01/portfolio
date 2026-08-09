@@ -4,6 +4,7 @@ import { defineConfig, loadEnv } from "vite";
 import sitemap from "vite-plugin-sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
+import { cloudflare } from "@cloudflare/vite-plugin";
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
@@ -13,6 +14,7 @@ export default defineConfig(({ mode }) => {
     plugins: [
       react(),
       tailwindcss(),
+      cloudflare(),
       babel({ presets: [reactCompilerPreset()] }),
       sitemap({
         hostname: env.VITE_SITE_URL,
@@ -31,3 +33,4 @@ export default defineConfig(({ mode }) => {
     },
   };
 });
+

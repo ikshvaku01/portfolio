@@ -25,3 +25,5 @@ dist-ssr
 
 *.env
 package-lock.json
+.wrangler
+.dev.vars*
