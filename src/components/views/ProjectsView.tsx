@@ -1,6 +1,8 @@
 import type { Theme } from "@/types";
 import braidsIcon from "@/assets/braids.ico";
 import braidsScreenshot from "@/assets/braids.png";
+import dwarpalaIcon from "@/assets/dwarpala.ico";
+import dwarpalaScreenshot from "@/assets/dwarpala.png";
 
 export function ProjectsView({
                                  theme,
@@ -56,6 +58,7 @@ export function ProjectsView({
             </div>
 
             <div className="w-full max-w-[1140px] px-[12px] md:px-[32px] mt-[54px] pb-[140px]">
+                <div className="flex flex-col gap-6 md:gap-8">
                 <div
                     className={`rounded-[16px] md:rounded-[20px] border p-[24px] md:p-[32px] grid md:grid-cols-[1.2fr_0.8fr] gap-8 items-center ${
                         theme === "dark"
@@ -191,6 +194,154 @@ export function ProjectsView({
                         </div>
                     </div>
                 </div>
+
+
+            {/*Project Two*/}
+                <div
+                    className={`rounded-[16px] md:rounded-[20px] border p-[24px] md:p-[32px] grid md:grid-cols-[1.2fr_0.8fr] gap-8 items-center ${
+                        theme === "dark"
+                            ? "bg-[#151515] border-[#232323]"
+                            : "bg-white border-[#ececea] shadow-[0_1px_1px_rgba(0,0,0,0.02)]"
+                    }`}
+                >
+                    <div>
+                        <div className="flex items-center gap-2.5">
+                            <img
+                                src={dwarpalaIcon}
+                                alt="Dwarpala icon"
+                                width={22}
+                                height={22}
+                                className="rounded-[6px] shrink-0"
+                            />
+                            <a
+                                href="https://github.com/ikshvaku01/dwarpala"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="font-[600] text-[17px] tracking-[-0.02em] underline decoration-black/20 underline-offset-[3px] hover:decoration-black"
+                            >
+                                Dwarpala - Code-to-AI-Context Compiler
+                            </a>
+                            <span
+                                className={`text-[10px] px-2 py-1 rounded-full border ${
+                                    theme === "dark"
+                                        ? "border-white/10 bg-white/5 text-white/45"
+                                        : "border-black/10 bg-black/[0.03] text-black/45"
+                                }`}
+                            >
+                                Open Source
+                            </span>
+                        </div>
+
+                        <p
+                            className={`mt-[12px] text-[13.5px] leading-[1.55] max-w-[540px] ${
+                                theme === "dark" ? "text-white/60" : "text-black/60"
+                            }`}
+                        >
+                            A Rust terminal application that scans a codebase, applies
+                            GitIgnore-aware and language-specific filtering, and compiles the
+                            project into a single structured document ready for AI context
+                            windows.
+                        </p>
+
+                        <p
+                            className={`mt-[12px] text-[13.5px] leading-[1.55] max-w-[540px] ${
+                                theme === "dark" ? "text-white/60" : "text-black/60"
+                            }`}
+                        >
+                            Built as a learning project end to end — including an offline
+                            Ed25519 license-signing and verification module, developed as its
+                            own crate via a git submodule, to understand how licensed
+                            software is architected in practice.
+                        </p>
+
+                        <div className="mt-[18px] flex flex-wrap gap-2">
+                            {[
+                                "Rust",
+                                "ratatui",
+                                "Cargo Workspaces",
+                                "Ed25519",
+                                "crossterm",
+                                "serde",
+                            ].map((tag) => (
+                                <span
+                                    key={tag}
+                                    className={`text-[11px] px-[8px] py-[4px] rounded-full border ${
+                                        theme === "dark"
+                                            ? "border-white/10 bg-white/5 text-white/60"
+                                            : "border-black/10 bg-black/[0.03] text-black/60"
+                                    }`}
+                                >
+                                    {tag}
+                                </span>
+                            ))}
+                        </div>
+
+                        <div className="mt-[20px] flex items-center gap-4 text-[12px]">
+                            <a
+                                href="https://dwarpala.ikshvaku01.workers.dev/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={`underline underline-offset-2 transition-opacity hover:opacity-60 ${
+                                    theme === "dark" ? "text-white/70" : "text-black/60"
+                                }`}
+                            >
+                                Live project ↗
+                            </a>
+
+                            <a
+                                href="https://github.com/ikshvaku01/dwarpala/releases/tag/v0.1.0"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={`underline underline-offset-2 transition-opacity hover:opacity-60 ${
+                                    theme === "dark" ? "text-white/70" : "text-black/60"
+                                }`}
+                            >
+                                Release ↗
+                            </a>
+
+                            <a
+                                href="https://github.com/ikshvaku01/dwarpala"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={`underline underline-offset-2 transition-opacity hover:opacity-60 ${
+                                    theme === "dark" ? "text-white/70" : "text-black/60"
+                                }`}
+                            >
+                                GitHub ↗
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        className={`relative min-h-[220px] rounded-[14px] border overflow-hidden ${
+                            theme === "dark"
+                                ? "border-white/10 bg-[#101010]"
+                                : "border-black/8 bg-[#f7f7f5]"
+                        }`}
+                    >
+                        <div
+                            className={`absolute top-0 left-0 right-0 h-8 border-b flex items-center px-3 gap-1.5 ${
+                                theme === "dark"
+                                    ? "border-white/10 bg-white/[0.025]"
+                                    : "border-black/8 bg-white/70"
+                            }`}
+                        >
+                            <span className="w-2 h-2 rounded-full bg-red-400/70" />
+                            <span className="w-2 h-2 rounded-full bg-yellow-400/70" />
+                            <span className="w-2 h-2 rounded-full bg-green-400/70" />
+                        </div>
+
+                        <div className="absolute inset-x-0 top-8 bottom-0">
+                            <img
+                                src={dwarpalaScreenshot}
+                                alt="Braid — Git Commit Graph Explorer screenshot"
+                                className="w-full h-full object-cover object-top"
+                                loading="lazy"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
     );
