@@ -1,0 +1,25 @@
+# Yash Singh Bajetha — Software Engineer
+
+> Portfolio of Yash Singh Bajetha, a software engineer specializing in Java, Spring Boot, TypeScript, Next.js, PostgreSQL, Redis, Docker, and modern web application development.
+
+Yash Singh Bajetha is a software engineer focused on building scalable backend services, full-stack web applications, SaaS products, and developer-focused solutions.
+
+## Experience
+
+* [Professional Experience](https://yourdomain.com/#experience): Software engineering roles, responsibilities, and professional work history.
+
+## Projects
+
+* [CSIR-TKDL Platform](https://yourdomain.com/#projects): Software platform project demonstrating backend engineering, application architecture, and production development.
+* [Conductor SaaS Automation](https://yourdomain.com/#projects): SaaS automation project focused on workflow automation and scalable application development.
+
+## Skills
+
+* [Technical Skills](https://yourdomain.com/#skills): Java, Spring Boot, TypeScript, Next.js, React, PostgreSQL, Redis, Docker, REST APIs, Git, and software architecture.
+
+## Links
+
+* [GitHub](https://github.com/YOUR_USERNAME): Source code, open-source contributions, and software projects.
+* [LinkedIn](https://www.linkedin.com/in/YOUR_USERNAME/): Professional profile and employment history.
+* [LeetCode](https://leetcode.com/YOUR_USERNAME/): Competitive programming and algorithm practice.
+* [CodeChef](https://www.codechef.com/users/YOUR_USERNAME): Competitive programming profile.
