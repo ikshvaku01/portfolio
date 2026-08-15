@@ -85,22 +85,22 @@ export function LinksView({
           />
           <ProfileLink
             label="GitLab"
-            href="https://gitlab.com/your-username"
-            detail="Profile coming soon"
+            href="https://gitlab.com/ikshvaku01"
+            detail="@ikshvaku01"
             theme={theme}
             icon={GITLAB_ICON}
           />
           <ProfileLink
             label="LeetCode"
-            href="https://leetcode.com/your-username"
-            detail="Profile coming soon"
+            href="https://leetcode.com/ikshvaku01"
+            detail="@ikshvaku01"
             theme={theme}
             icon={LEETCODE_ICON}
           />
           <ProfileLink
             label="CodeChef"
-            href="https://www.codechef.com/users/your-username"
-            detail="Profile coming soon"
+            href="https://www.codechef.com/users/ikshvaku01"
+            detail="@ikshvaku01"
             theme={theme}
             icon={CODECHEF_ICON}
           />
